@@ -12,7 +12,7 @@ My page topic: Library of Ruina.
 - Navigation links: About, About Floors, Guest Form
 - Main sections: About the Library, Selected Floors, Guest Form
 - Table columns: Floor, Patron Librarian, Theme
-- Form fields: Name, Email, Favorite Floor, Library Choice
+- Form fields: Name, Email, Favorite Floor
 - Image: Library of Ruina GIF
 - Media: String_Theocracy.mp3
 
