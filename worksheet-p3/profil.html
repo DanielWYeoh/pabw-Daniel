@@ -2,37 +2,93 @@
 <html lang="id">
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Library of Ruina</title>
 </head>
 <body>
 
     <header>
-    <h1>Library of Ruina</h1>
+        <h1>Library of Ruina</h1>
 
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="#about">About the Library</a></li>
-            <li><a href="#floors">Selected Floors</a></li>
-            <li><a href="#guest-form">Guest Form</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About the Library</a></li>
+                <li><a href="#floors">Selected Floors</a></li>
+                <li><a href="#guest-form">Guest Form</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section id="about">
-        <h2>About the Library</h2>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About the Library</h2>
 
-    <section id="guest-form">
-        <h2>Guest Form</h2>
-    </section>
-</main>
+            <figure>
+                <img
+                    src="https://media1.tenor.com/m/MBh51LZPZEIAAAAC/library-of-ruina-angela.gif"
+                    alt="Angela in the Library of Ruina"
+                    width="640" height="360" loading="lazy">
+                <figcaption>
+                    Angela in the Library of Ruina.
+                </figcaption>
+            </figure>
 
-<footer>
-    <p>Daniel Widison Yeoh · 25523047 · 2026</p>
-</footer>
+            <audio id="background-music" autoplay loop muted>
+                <source src="String_Theocracy.mp3" type="audio/mpeg">
+            </audio>
+
+            <script>
+                const music = document.getElementById('background-music');
+
+                document.addEventListener("click",  () => {
+                    music.muted = false;
+                    music.play();
+                }, { once: true });
+            </script>
+
+            <h3 id="floors">Selected Floors</h3>
+
+            <table>
+                <caption>Selected Library Floors</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Floor</th>
+                        <th scope="col">Patron Librarian</th>
+                        <th scope="col">Theme</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">General Works</th>
+                        <td>Angela</td>
+                        <td>Knowledge</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">History</th>
+                        <td>Malkuth</td>
+                        <td>Growth</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Language</th>
+                        <td>Hod</td>
+                        <td>Expression</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="guest-form">
+            <h2>Guest Form</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>Daniel Widison Yeoh · 25523047 · 2026</p>
+    </footer>
+
 </body>
 </html>
