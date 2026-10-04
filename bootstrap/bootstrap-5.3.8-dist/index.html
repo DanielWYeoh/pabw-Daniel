@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library of Ruina</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #171513;
+            color: #d6c7a8;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .navbar {
+            background-color: #0d0c0b !important;
+            border-bottom: 1px solid #806b3e;
+        }
+
+        .navbar-brand {
+            color: #d8b96a !important;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: #aaa08d !important;
+        }
+
+        .nav-link:hover {
+            color: #d8b96a !important;
+        }
+
+        .library-title {
+            color: #d8b96a;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .subtitle {
+            color: #968b78;
+        }
+
+        .btn-ruina {
+            background-color: #6e1e22;
+            border: 1px solid #a87345;
+            color: #ead9b0;
+        }
+
+        .btn-ruina:hover {
+            background-color: #8a292d;
+            color: white;
+        }
+
+        .ruina-card {
+            background-color: #24201c;
+            border: 1px solid #665536;
+            border-radius: 0;
+            color: #d6c7a8;
+        }
+
+        .ruina-card:hover {
+            border-color: #c09a4a;
+        }
+
+        .ruina-card .card-title {
+            color: #d8b96a;
+        }
+
+        .ruina-card .card-text {
+            color: #aaa08d;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            color: #b99a5b;
+            border-bottom: 1px solid #594a32;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 25px;
+            background-color: #0d0c0b;
+            border-top: 1px solid #594a32;
+            color: #716a5e;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">THE LIBRARY</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Key Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guests</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="library-title">The Library</h1>
+            <p class="subtitle">May you find your book in this place.</p>
+
+            <div class="mt-4">
+                <button class="btn btn-ruina px-4">
+                    Enter the Library
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="section-title mb-4">Key Pages</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card ruina-card h-100">
+                    <img src="https://media.tenor.com/FQSF-QX0KrwAAAAi/malkuth-salute.gif" class="card-img-top" alt="Malkuth">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Malkuth</h5>
+                        <p class="card-text">
+                            Floor of Historical Studies. A place where memories of the past are preserved.
+                        </p>
+                        <a href="#" class="btn btn-ruina">View Key Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card ruina-card h-100">
+                    <img src="https://media.tenor.com/QV60pGTfbdwAAAAi/hod-question-mark.gif" class="card-img-top" alt="Hod">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Hod</h5>
+                        <p class="card-text">
+                            Floor of Literature. Knowledge and communication intertwine within its walls.
+                        </p>
+                        <a href="#" class="btn btn-ruina">View Key Page</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card ruina-card h-100">
+                    <img src="https://media.tenor.com/Hi4wgYsy68gAAAAi/yesod-smirk.gif" class="card-img-top" alt="Yesod">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Yesod</h5>
+                        <p class="card-text">
+                            Floor of Technological Sciences. Logic and technology guide its studies.
+                        </p>
+                        <a href="#" class="btn btn-ruina">View Key Page</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="mb-1">THE LIBRARY</p>
+        <small>Every book contains a story. Every guest becomes a book.</small>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
