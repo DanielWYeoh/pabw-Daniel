@@ -1,14 +1,17 @@
 const URL = "https://rickandmortyapi.com/api/character";
 
 export async function fetchNews() {
-  const response = await fetch(URL);
+  try {
+    const response = await fetch(URL);
 
-  console.log("status:", response.status, "ok:", response.ok);
+    if (!response.ok) {
+      throw new Error("status " + response.status);
+    }
 
-  if (!response.ok) {
-    throw new Error("status " + response.status);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("failed to load", error.message);
+    throw error;
   }
-
-  const data = await response.json();
-  return data;
 }
