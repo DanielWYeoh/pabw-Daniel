@@ -105,7 +105,3 @@ async function loadCharacters() {
 }
 
 loadCharacters();
-
-//const testEmpty = document.createElement("p");
-//testEmpty.textContent = "Empty state test: No characters found.";
-//document.body.appendChild(testEmpty);
